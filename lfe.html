@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFE Report - Group 01, Sylhet</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            width: 8.5in;
+            height: 11in;
+            background-color: white;
+            margin: 20px;
+            padding: 1in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            page-break-after: always;
+        }
+
+        .page:last-child {
+            page-break-after: avoid;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d2691e;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #0000ff;
+            margin: 0;
+        }
+
+        .submitted-to {
+            text-align: center;
+            font-size: 16px;
+            color: #008000;
+            margin-bottom: 20px;
+        }
+
+        .venue-coordinators {
+            text-align: center;
+            font-size: 14px;
+            color: #008000;
+            margin-bottom: 20px;
+        }
+
+        .coordinator-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .coordinator-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .coordinator-photo {
+            width: 100px;
+            height: 120px;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .coordinator-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .group-title {
+            text-align: center;
+            font-size: 16px;
+            color: #008000;
+            margin: 40px 0 20px;
+            font-weight: bold;
+        }
+
+        .group-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .group-table th,
+        .group-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .group-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .empty-page {
+            /* Empty page 3, so minimal styling */
+        }
+
+        @media print {
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1 -->
+    <div class="page">
+        <div class="header">
+            <img src="iub logo.png" alt="IUB Logo" style="width: 200px; height: 100px;">
+            <h1>Independent University, Bangladesh</h1>
+            <h2>Live in Field Experience</h2>
+        </div>
+        <div class="submitted-to">
+            Submitted to<br>
+            THE OFFICE OF LFE<br>
+            THROUGH :
+        </div>
+        <div class="venue-coordinators">Venue Coordinators</div>
+        <table class="coordinator-table">
+            <tr>
+                <td>
+                    <div class="coordinator-photo"><img src="sir 1.png" alt="Khan Muhammad Bin Asad"></div>
+                    Khan Muhammad Bin Asad, PhD
+                </td>
+                <td>
+                    <div class="coordinator-photo"><img src="mam 1.png" alt="Rafia Rokaiya Hossain"></div>
+                    Rafia Rokaiya Hossain
+                </td>
+                <td>
+                    <div class="coordinator-photo"><img src="sir 2.png" alt="Ahad Chowdhury"></div>
+                    Ahad Chowdhury
+                </td>
+                <td>
+                    <div class="coordinator-photo"><img src="mam 2.png" alt="Afroza Sultana"></div>
+                    Afroza Sultana, PhD
+                </td>
+            </tr>
+        </table>
+        <div class="group-title">Group 01, Sylhet FIBDV:</div>
+        <table class="group-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>School</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nur Muhammad</td>
+                    <td>2220410</td>
+                    <td>SETS</td>
+                </tr>
+                <tr>
+                    <td>Sadia Yasmin</td>
+                    <td>2230522</td>
+                    <td>SLASS</td>
+                </tr>
+                <tr>
+                    <td>Safone Ahmed</td>
+                    <td>2230243</td>
+                    <td>SBE</td>
+                </tr>
+                <tr>
+                    <td>Md. Shahadat Hossain Hamim</td>
+                    <td>2111436</td>
+                    <td>SBE</td>
+                </tr>
+                <tr>
+                    <td>Samim Rahman Bhuiyan Rudro</td>
+                    <td>2210067</td>
+                    <td>SELS</td>
+                </tr>
+                <tr>
+                    <td>Tajallina Binte Omar</td>
+                    <td>2221784</td>
+                    <td>SBE</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="lfe group.jpg" alt="Group Photo" style="width: 550px; height: 300px;">
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page empty-page">
+        <!-- Empty page -->
+    </div>
+</body>
+</html>
